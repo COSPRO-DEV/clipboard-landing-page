@@ -73,7 +73,7 @@ git push
 
 ### AI Collaboration
 
-I used Claude throughout this project as a step-by-step mentor. We planned the page section by section from the design files and style guide before writing any code, built the HTML structure first, then worked through the CSS one section at a time — base styles, then each content section, then the responsive media query and hover states last. Claude also walked me through Git and GitHub for the first time, since this was new to me this week.
+I used Claude at some points of this project as a step-by-step mentor. I planned the page section by section from the design files and style guide before writing any code, built the HTML structure first, then worked through the CSS one section at a time — base styles, then each content section, then the responsive media query and hover states last. Claude then walked me through Git and GitHub for the first time, since this was new to me this week.
 
 What worked well: breaking a large page into small, checkable pieces made a multi-section layout feel manageable instead of overwhelming, and having Git explained step-by-step (rather than just given as commands to copy) meant I understood what each command was actually doing, not just that it worked.
 
