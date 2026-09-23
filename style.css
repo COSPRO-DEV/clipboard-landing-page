@@ -1,0 +1,295 @@
+/* ===== Font import ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+}
+
+/* ===== Hero section ===== */
+.hero {
+    background-image: url('./images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 48px 24px 0;
+}
+
+.logo {
+    margin-bottom: 64px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 32px;
+}
+
+/* ===== CTA buttons (shared: hero + final CTA) ===== */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 999px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn-mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* ===== Snippets section ===== */
+.snippets {
+    padding: 80px 24px;
+}
+
+.snippets-intro {
+    max-width: 540px;
+    margin: 0 auto 64px;
+}
+
+.snippets-intro h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.snippets-intro p {
+    color: hsl(201, 11%, 66%);
+}
+
+.computer-img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 48px;
+}
+
+.snippets-features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: hsl(201, 11%, 66%);
+}
+
+/* ===== Access section ===== */
+.access {
+    padding: 80px 24px;
+}
+
+.access h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.access p {
+    color: hsl(201, 11%, 66%);
+    max-width: 450px;
+    margin: 0 auto 48px;
+}
+
+.devices-img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== Workflow section ===== */
+.workflow {
+    padding: 80px 24px;
+}
+
+.workflow h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.workflow > p {
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 64px;
+}
+
+.workflow-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.tool-icon {
+    width: 48px;
+    margin-bottom: 24px;
+}
+
+.tool h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tool p {
+    color: hsl(201, 11%, 66%);
+}
+
+/* ===== Logos section ===== */
+.logos {
+    padding: 0 24px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo-item {
+    height: 24px;
+    opacity: 0.5;
+}
+
+/* ===== Final CTA section ===== */
+.final-cta {
+    padding: 80px 24px;
+}
+
+.final-cta h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.final-cta p {
+    color: hsl(201, 11%, 66%);
+    max-width: 450px;
+    margin: 0 auto 32px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: hsl(240, 10%, 97%);
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-logo {
+    height: 32px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+/* ===== Hover states ===== */
+.btn:hover {
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* ===== Desktop layout (media query) ===== */
+@media (min-width: 800px) {
+    .hero {
+        background-image: url('./images/bg-header-desktop.png');
+        padding-top: 80px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .snippets-layout {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 64px;
+        text-align: left;
+    }
+
+    .computer-img {
+        margin: 0;
+        flex: 1;
+    }
+
+    .snippets-features {
+        flex: 1;
+    }
+
+    .workflow-tools {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .tool {
+        flex: 1;
+    }
+
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-links ul {
+        flex-direction: row;
+        gap: 32px;
+    }
+}
